@@ -6,8 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" type="text/css href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
- <div id="hello" class="hello" style="color: orange;">Hello world!</div> 
+  <style>
+    .myGrid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    #first{background-color: yellow;}
+    #second{background-color: green;}
+    #third{background-color: blue;}
+    #fourth{background-color: purple;}
+  </style> 
+  <div class="myGrid">
+    <div id="first">1번영역</div>
+    <div id="second">2번영역</div>
+    <div id="third">3번영역</div>
+    <div id="fourth">4번영역</div>
+  </div>
 </body>
 </html>
